@@ -23,7 +23,7 @@ steps:
        /tmp/cdefense scan --api-key=7b4e6d37-a05e-a9b2-24a7-c661052297ac --lang=java --project-name=Java_ADO
        continueOnError: true
        /tmp/cdefense sast --api-key=7b4e6d37-a05e-a9b2-24a7-c661052297ac --lang=java --project-name=Java_ADO
-  displayName: 'SCA Scan'
+  displayName: 'SCA/SAST Scan'
 - task: PowerShell@2
   inputs:
     targetType: 'inline'
