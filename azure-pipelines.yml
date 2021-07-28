@@ -27,4 +27,3 @@ errorActionPreference: 'continue'
 - script: |
        /tmp/cdefense sast --api-key=7b4e6d37-a05e-a9b2-24a7-c661052297ac --lang=java --project-name=Java_ADO
   displayName: 'SAST Scan'
-errorActionPreference: 'continue'
