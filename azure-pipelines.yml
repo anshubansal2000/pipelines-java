@@ -21,9 +21,10 @@ steps:
 - script: |
     curl https://raw.githubusercontent.com/CloudDefenseAI/cd/master/latest/cd-latest-linux-x64.tar.gz > /tmp/cd-latest-linux-x64.tar.gz && tar -C /tmp -xzf /tmp/cd-latest-linux-x64.tar.gz && chmod +x /tmp/cdefense
        /tmp/cdefense scan --api-key=7b4e6d37-a05e-a9b2-24a7-c661052297ac --lang=java --project-name=Java_ADO
-       continueOnError: true
+       # continueOnError: true
   displayName: 'SCA Scan'
-
+  condition: always()
+  
 - script: |
        /tmp/cdefense sast --api-key=7b4e6d37-a05e-a9b2-24a7-c661052297ac --lang=java --project-name=Java_ADO
   displayName: 'SAST Scan'
